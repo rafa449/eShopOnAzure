@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Azure/azure-dev/main/schemas/v1.0/azure.yaml.json
+
+name: e-shop-on-azure
+metadata:
+    template: azd-init@1.11.0
+services:
+    basket-api:
+        project: src/Basket.API
+        host: containerapp
+        language: dotnet
+    catalog-api:
+        project: src/Catalog.API
+        host: containerapp
+        language: dotnet
+    eshop-apphost:
+        project: src/eShop.AppHost
+        host: containerapp
+        language: dotnet
+    mobile-bff-shopping:
+        project: src/Mobile.Bff.Shopping
+        host: containerapp
+        language: dotnet
+    order-processor:
+        project: src/OrderProcessor
+        host: containerapp
+        language: dotnet
+    ordering-api:
+        project: src/Ordering.API
+        host: containerapp
+        language: dotnet
+    payment-processor:
+        project: src/PaymentProcessor
+        host: containerapp
+        language: dotnet
+    web-app:
+        project: src/WebApp
+        host: containerapp
+        language: dotnet
+    webhook-client:
+        project: src/WebhookClient
+        host: containerapp
+        language: dotnet
+    webhooks-api:
+        project: src/Webhooks.API
+        host: containerapp
+        language: dotnet

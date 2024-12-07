@@ -1,0 +1,235 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "environmentName": {
+        "value": "${AZURE_ENV_NAME}"
+      },
+      "location": {
+        "value": "${AZURE_LOCATION}"
+      },
+      "basketApiExists": {
+        "value": "${SERVICE_BASKET_API_RESOURCE_EXISTS=false}"
+      },
+      "basketApiDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "catalogApiExists": {
+        "value": "${SERVICE_CATALOG_API_RESOURCE_EXISTS=false}"
+      },
+      "catalogApiDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "mobileBffShoppingExists": {
+        "value": "${SERVICE_MOBILE_BFF_SHOPPING_RESOURCE_EXISTS=false}"
+      },
+      "mobileBffShoppingDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "orderProcessorExists": {
+        "value": "${SERVICE_ORDER_PROCESSOR_RESOURCE_EXISTS=false}"
+      },
+      "orderProcessorDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "orderingApiExists": {
+        "value": "${SERVICE_ORDERING_API_RESOURCE_EXISTS=false}"
+      },
+      "orderingApiDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "paymentProcessorExists": {
+        "value": "${SERVICE_PAYMENT_PROCESSOR_RESOURCE_EXISTS=false}"
+      },
+      "paymentProcessorDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "webAppExists": {
+        "value": "${SERVICE_WEB_APP_RESOURCE_EXISTS=false}"
+      },
+      "webAppDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "webhookClientExists": {
+        "value": "${SERVICE_WEBHOOK_CLIENT_RESOURCE_EXISTS=false}"
+      },
+      "webhookClientDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "webhooksApiExists": {
+        "value": "${SERVICE_WEBHOOKS_API_RESOURCE_EXISTS=false}"
+      },
+      "webhooksApiDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "eshopApphostExists": {
+        "value": "${SERVICE_ESHOP_APPHOST_RESOURCE_EXISTS=false}"
+      },
+      "eshopApphostDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "principalId": {
+        "value": "${AZURE_PRINCIPAL_ID}"
+      }
+    }
+}
